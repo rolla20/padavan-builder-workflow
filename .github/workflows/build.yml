@@ -1,3 +1,9 @@
+name: Checkout code
+    uses: actions/checkout@v4
+name: Run preparation script
+    run: |
+      chmod +x ./pre-build.sh
+      ./pre-build.sh
 name: Build firmware
 
 on:
